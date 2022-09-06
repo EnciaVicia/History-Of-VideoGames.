@@ -70,57 +70,100 @@
 
 
 .img1{
-    grid-row: ;
-    grid-column: ;
-    width: 180px;
-    height: 180px;
+    grid-row: 3;
+    grid-column: 1;
+    width: 20vw;
+    height: 20vh;
     margin: 10px;
 }
 
 .div1__p{
-    grid-column: ;
-    grid-row: ;
+    grid-column: 2;
+    grid-row: 5;
    
     border: 5px dashed black;
     overflow: auto;
 }
 
 .img2{
-    grid-column: ;
-    grid-row: ;
-    width: 180px;
-    height: 180px;
+    grid-column: 3/4;
+    grid-row: 3;
+    width: 20vw;
+    height: 20vh;
+    margin-left: 70px;
 }
-
-@media only screen and (max-width: 490px){
-    .h1__sponsors{
-        font-size: 20px;
-        grid-row: ;
-        grid-column: ;
-    }
-}
-
 @media only screen and (max-width: 572px){
     .h1__sponsors{
-        grid-row: ;
-        grid-column: ;
+        
         margin: 10px;
     }
 
-    .div1__p{
-        grid-row: ;
-        grid-column: ;
-    }
+
 
     .img1{
-        grid-row: ;
-        grid-column: ;
+        
         margin: 20px;
     }
 
     .img2{
-        grid-row: ;
-        grid-column: ;
+        
         margin: 20px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .body{
+        display: grid;
+        grid-template-rows: repeat(7, 7rem);
+        grid-template-columns: repeat(4,1fr);
+        position: relative;
+    }
+    .h1__sponsors{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .div1__p{
+        grid-row: 6;
+        grid-column: 1/3;
+    }
+
+    .img1{
+        grid-row: 4;
+    }
+
+    .img2{
+        grid-row: 4;
+        grid-column: 2/3;
+    }
+
+    
+}
+@media only screen and (max-width: 490px){
+    .h1__sponsors{
+        font-size: 20px;
+        
+    }
+}
+@media only screen and (max-width: 328px){
+    .body{
+        grid-template-rows: repeat(8, 7rem);
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .h1__sponsors{
+        grid-row: 3;
+    }
+
+    .img1{
+        grid-row: 5;
+    }
+
+    .img2{
+        grid-row: 5;
+    }
+
+    .div1__p{
+        grid-row: 7;
     }
 }
