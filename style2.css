@@ -1,0 +1,353 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+}
+.body{
+    display: grid;
+    grid-template-rows: repeat(15, 7rem);
+    grid-template-columns: repeat(10,1fr);
+    border: 5px solid #A81A1A;
+    position: relative;
+}
+
+.nav__responsive-ul{
+    display: none;
+}
+
+.nav{
+    background-color: darkslateblue;
+    border-radius: 20px;
+}
+
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+    color: #fff;
+}
+
+.nav__li:hover > a{
+    
+    color: #bbb;
+}
+
+.nav__li:hover{
+    
+    color: #bbb;
+}
+
+.nav__li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.header{
+    grid-column: 1 / 7;
+    grid-row: 1/1;
+    position: sticky;
+    top: 0;
+}
+
+.card__title {
+    grid-column: 4/8;
+    grid-row: 2;
+    border: 10px solid #A81A1A;
+    padding: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    
+    box-shadow: 0 25px 50px -2px rgb(195, 109, 109);
+    background-image: url(https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=);
+    font-size: 25px;
+}
+
+.grid-content{
+    grid-column: 1/10;
+    grid-row: 4/6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__section1--div-img{
+    height: 20vh;
+    width: 20vw;
+    
+    padding: 20px;
+    box-shadow: 0 25px 50px -30px rgb(234, 128, 128);
+    border-radius: 30px;
+    grid-column:5;
+}
+
+.card__p1 {
+    padding: 10px;
+    border-top: 5px solid #A81A1A;
+    border-bottom: 5px solid #A81A1A;
+    /* width: 500px; */
+    height: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 113, 224);
+    overflow: auto;
+    margin: 10px;
+    grid-row: 3;
+    grid-column: 1/5;
+}
+
+.card__p2 {
+    padding: 10px;
+    border-top: 5px solid #A81A1A;
+    border-bottom: 5px solid #A81A1A;
+    /* width: 500px; */
+    height: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 113, 224);
+    overflow: auto;
+    margin: 10px;
+    grid-row: 3;
+    grid-column: 6/10;
+}
+
+.grid-content2{
+    grid-column:1/10 ;
+    grid-row: 8 / 15;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title2{
+    grid-row: 7 / 8;
+    grid-column: 4 / 8;
+    border: 5px solid #A81A1A;
+    display: inline-block;
+    box-shadow: 0 25px 50px -14px rgb(160, 59, 59);
+    padding: 5px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/23/07/37/wall-1217083__340.jpg);
+    text-align: center;
+}
+
+.card_section2--img{
+    grid-column: 12/15;
+    grid-row: 10;
+    height: 175px;
+    width: 20px;
+    padding: 10px;
+    box-shadow: 0 25px 50px -30px rgb(234, 128, 128);
+    border-radius: 30px;
+    margin: 10px;
+}
+.description-2{
+    grid-column: 2/2;
+    grid-row: 10/2;
+    padding: 5px;
+    border-top: 5px solid #A81A1A;
+    border-bottom: 5px solid #A81A1A;
+    /* width: 500px; */
+    height: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 113, 224);
+    overflow: auto;
+    margin-left: 30px;
+}
+
+.card__footer{
+   
+    grid-row: 15/16;
+    grid-column: 1/12;
+    
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border: 10px solid black;
+    background-color: #e66969;
+    border-radius: 10px solid black;
+}
+/* ------------------------------------------------- */
+
+@media only screen and (max-width: 550px){
+    .grid-content{
+        grid-column: 1/10;
+        grid-row: 4/6;
+    }
+
+    .card__section1--div-img{
+        height: 20vh;
+        width: 20vw;
+        
+        padding: 25px;
+        box-shadow: 0 25px 50px -30px rgb(234, 128, 128);
+        border-radius: 30px;
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    .title2{
+        grid-row: 7 / 8;
+        grid-column: 2 / 8;
+        border: 5px solid #A81A1A;
+        display: inline-block;
+        box-shadow: 0 25px 50px -14px rgb(160, 59, 59);
+        padding: 5px;
+        background-image: url(https://cdn.pixabay.com/photo/2016/02/23/07/37/wall-1217083__340.jpg);
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .card__title {
+        grid-column: 2/6;
+        grid-row: 2;
+        border: 10px solid #A81A1A;
+        padding: 1%;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: inline-block;
+        
+        box-shadow: 0 25px 50px -2px rgb(195, 109, 109);
+        background-image: url(https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=);
+        font-size: 16px;
+    }
+
+    .header{
+        grid-column: 0 / 4;
+        grid-row: 1/1;
+     
+        
+    }
+
+    .card__p1 {
+        padding: 10px;
+        border-top: 5px solid #A81A1A;
+        border-bottom: 5px solid #A81A1A;
+        /* width: 500px; */
+        height: 200px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(113, 113, 224);
+        overflow: auto;
+        margin: 10px;
+        grid-row: 3;
+        grid-column: 1/10;
+    }
+    
+    .card__p2 {
+        padding: 10px;
+        border-top: 5px solid #A81A1A;
+        border-bottom: 5px solid #A81A1A;
+        /* width: 500px; */
+        height: 200px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(113, 113, 224);
+        overflow: auto;
+        margin: 10px;
+        grid-row: 5;
+        grid-column: 2/10;
+    }
+}
+
+@media only screen and (max-width: 411px){
+    .card__section1--div-img{
+        height: 20vh;
+        width: 20vw;
+        
+        padding: 25px;
+        box-shadow: 0 25px 50px -30px rgb(234, 128, 128);
+        border-radius: 30px;
+        grid-row: 5/6;
+        grid-column: 1;
+    }
+    
+    .card__p1 {
+        padding: 10px;
+        border-top: 5px solid #A81A1A;
+        border-bottom: 5px solid #A81A1A;
+        /* width: 500px; */
+        height: 200px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(113, 113, 224);
+        overflow: auto;
+        margin: 10px;
+        grid-row: 3;
+        grid-column: 1/5;
+    }
+    
+    .card__p2 {
+        padding: 10px;
+        border-top: 5px solid #A81A1A;
+        border-bottom: 5px solid #A81A1A;
+        /* width: 500px; */
+        height: 200px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(113, 113, 224);
+        overflow: auto;
+        margin: 10px;
+        grid-row: 5;
+        grid-column: 2/10;
+    }
+
+    .title2{
+        grid-column: 2/10;
+    }
+
+    .card__title {
+        grid-column: 5/10;
+        grid-row: 3/4;
+        border: 10px solid #A81A1A;
+        padding: 1%;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: inline-block;
+        
+        box-shadow: 0 25px 50px -2px rgb(195, 109, 109);
+        background-image: url(https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=);
+        font-size: 16px;
+    }
+
+    .description-2{
+        grid-column: 2/2;
+        grid-row: 11;
+        padding: 5px;
+        border-top: 5px solid #A81A1A;
+        border-bottom: 5px solid #A81A1A;
+        /* width: 500px; */
+        height: 200px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(113, 113, 224);
+        overflow: auto;
+        margin-left: 30px;
+    }
+
+    .card_section2--img1{
+        grid-column: 12/15;
+        grid-row: 10;
+        height: 175px;
+        width: 20px;
+        padding: 10px;
+        box-shadow: 0 25px 50px -30px rgb(234, 128, 128);
+        border-radius: 30px;
+        margin: 10px;
+    }
+
+    .card_section2--img2{
+        grid-column: 12/15;
+        grid-row: 13/15;
+        height: 175px;
+        width: 20px;
+        padding: 10px;
+        box-shadow: 0 25px 50px -30px rgb(234, 128, 128);
+        border-radius: 30px;
+        margin: 10px;
+    }
+}
