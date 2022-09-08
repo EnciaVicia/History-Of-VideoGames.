@@ -59,7 +59,7 @@
 }
 
 .header:hover{
-    transform: translateX(30px);
+    transform: scale(1.01);
 }
 
 
@@ -123,8 +123,7 @@ textarea{
 
 .card__footer {
     z-index: -1;
-    grid-row: 15/16;
-    grid-column: 1/12;
+   
 
     justify-content: space-around;
     text-align: center;
