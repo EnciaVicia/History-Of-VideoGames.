@@ -10,12 +10,8 @@
 }
 
 .body {
-    display: grid;
-    grid-template-rows: repeat(9, 7rem);
-    grid-template-columns: repeat(4, 1fr);
-    background: rgb(0,86,255);
-    background: linear-gradient(90deg, rgba(0,86,255,1) 0%, rgba(41,52,116,1) 85%);
-    margin: 0;
+    background: rgb(16,7,32);
+    background: linear-gradient(90deg, rgba(16,7,32,1) 5%, rgba(35,16,68,1) 48%, rgba(16,7,32,1) 100%);
 }
 
 .nav {
@@ -66,13 +62,17 @@
 .card__form{
     width: 450px;
     margin: auto;
-    background-color: rgba(0,0,0,.4);
+    /* background-color: rgba(0,0,0,.4); */
     padding: 10px 20px;
     box-sizing: border-box;
-    border-radius: 20px;
     z-index: 1000;
     grid-row: 3/5;
     grid-column: 1/4;
+    backdrop-filter: blur(9px) saturate(146%);
+    -webkit-backdrop-filter: blur(9px) saturate(146%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .card__form:hover{
@@ -128,9 +128,13 @@ textarea{
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    border: 10px solid black;
-    background-color: #e66969;
+    background-color: #FA2FB5;
+    border: 5px solid #FFC23C;
     border-radius: 10px solid black;
+}
+
+.card__footer a{
+    text-decoration: none;
 }
 
 

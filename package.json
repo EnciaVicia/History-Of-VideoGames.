@@ -1,0 +1,22 @@
+{
+  "name": "VideoGames",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/stylescss.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnciaVicia/History-Of-VideoGames..git"
+  },
+  "author": "Joaquin jaques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnciaVicia/History-Of-VideoGames./issues"
+  },
+  "homepage": "https://github.com/EnciaVicia/History-Of-VideoGames.#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

@@ -1,0 +1,9 @@
+.header {
+  grid-column: 1 / 7;
+  grid-row: 1/1;
+  position: sticky;
+  top: 0;
+  z-index: 3; }
+
+.header:hover {
+  transform: scale(1.01); }
