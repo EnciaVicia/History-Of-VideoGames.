@@ -1,10 +1,10 @@
 {
-  "name": "VideoGames",
+  "name": "videogamesenciavicia",
   "version": "1.0.0",
   "description": "Mi primer proyecto",
   "main": "index.js",
   "scripts": {
-    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/stylescss.css -w"
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./Stylecss/stylescss.css -w"
   },
   "repository": {
     "type": "git",

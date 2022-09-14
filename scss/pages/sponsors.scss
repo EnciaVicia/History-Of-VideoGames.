@@ -1,0 +1,67 @@
+.h1__sponsors{
+    grid-row: 2/4;
+    grid-column: 2;
+    text-align: center;
+    padding: 10px 0;
+    border: 10px solid red;
+    
+    border-radius: 20px;
+    background-color: rgba(193, 42, 42, 0.627);
+    font-size: 25px;
+    
+
+    &:hover{
+        background-color: #c53232;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+
+.img1{
+    grid-row: 3;
+    grid-column: 1;
+    width: 20vw;
+    height: 20vh;
+    margin: 10px;
+
+    &:hover{
+        transform: scale(1.05);
+        background: rgb(41,52,116);
+        background: linear-gradient(90deg, rgba(41,52,116,1) 17%, rgba(0,86,255,1) 85%);
+    }
+}
+
+
+
+.div1__p{
+    grid-column: 2;
+    grid-row: 5;
+   
+    border: 5px dashed black;
+    overflow: auto;
+
+
+    &:hover{
+        background-color: #e66969;
+    }
+}
+
+
+.img2{
+    grid-column: 3/4;
+    grid-row: 3;
+    width: 20vw;
+    height: 20vh;
+    margin-left: 70px;
+
+    &:hover{
+        transform: scale(1.05);
+        background: rgb(41,52,116);
+        background: linear-gradient(90deg, rgba(41,52,116,1) 17%, rgba(0,86,255,1) 85%);
+    }
+}
+
+.grid-item{
+    border: 5px solid black;
+}

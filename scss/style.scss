@@ -1,1 +1,12 @@
+// Components
+@import './components/global';
 @import './components/header';
+@import './components/footer';
+
+
+
+// Pages
+@import './pages/index.scss';
+@import './pages/about.scss';
+@import './pages/contact.scss';
+@import './pages/sponsors.scss';
