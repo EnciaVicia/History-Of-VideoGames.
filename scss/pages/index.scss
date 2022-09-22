@@ -1,11 +1,11 @@
 .card__title {
+    @include letterSpacing(10px);
     grid-column: 4/8;
     grid-row: 2;
     border: 10px solid #FFC23C;
     padding: 1%;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 10px;
     display: inline-block;
     color: #210e57;
     box-shadow: 0 25px 50px -35px rgb(255, 255, 255);
@@ -36,6 +36,7 @@
 }
 
 .card__p1 {
+    @include letterSpacing(2px);
     padding: 10px;
     border: 10px solid #210e57;
     height: 200px;
@@ -48,7 +49,6 @@
     grid-column: 1/5;
     box-shadow: 0px 0px 25px #222;
     filter: contrast(135%);
-    letter-spacing: 2px;
 }
 
 .card__p1:hover{
@@ -56,6 +56,7 @@
 }
 
 .card__p2 {
+    @include letterSpacing(2px);
     padding: 10px;
     border: 10px solid #210e57;
     height: 200px;
@@ -68,7 +69,6 @@
     grid-column: 6/10;
     box-shadow: 0px 0px 25px #222;
     filter: contrast(135%);
-    letter-spacing: 2px;
 
     &:hover{
         background-color: rgb(12, 12, 54);
@@ -78,18 +78,17 @@
 
 
 .grid-content2{
+    @include templateFlex(space-around, true);
     grid-column:1/10 ;
     grid-row: 8 / 15;
-    display: flex;
-    justify-content: space-around;
 }
 
 .title2{
+    @include letterSpacing(10px);
     grid-row: 7 / 8;
     grid-column: 4 / 8;
     border: 10px solid #FFC23C;
     display: inline-block;
-    letter-spacing: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     box-shadow: 0 25px 50px -35px rgb(255, 255, 255);
     padding: 5px;
@@ -162,22 +161,20 @@
 
 
 .capa{
+    @include letterSpacing(2px);
+    @include templateFlex(center, true);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #fff;
     transform: scale(0);
     transition: .3s ease;
     font-size: 30px;
     padding:30px;
     box-sizing: border-box;
-    letter-spacing: 2px;
 
 
     &:hover{
@@ -224,22 +221,20 @@
 }
 
 .capa{
+    @include letterSpacing(2px);
+    @include templateFlex(center, true);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #fff;
     transform: scale(0);
     transition: .3s ease;
     font-size: 30px;
     padding:30px;
     box-sizing: border-box;
-    letter-spacing: 2px;
 }
 
 
@@ -275,10 +270,10 @@
 
 
 .p__3{
+    @include letterSpacing(2px);
     background-image: url(https://cdn.pixabay.com/photo/2016/02/23/07/37/wall-1217083__340.jpg);
     border: 5px solid #FFC23C;
     padding: 5px;
-    letter-spacing: 2px;
     color: #210e57;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;

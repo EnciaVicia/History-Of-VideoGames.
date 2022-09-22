@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enciavideogames.000webhostapp.com/index.html/sitemap.xml

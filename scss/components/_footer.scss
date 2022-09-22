@@ -1,8 +1,37 @@
 .card__footer{
     background-color: #FA2FB5;
     border: 5px solid #FFC23C;
+
+    &--rrss{
+
+
+        $iconSocialMedia: (
+            facebook: #0C17F9,
+            youtube: #F01D1D,
+            twitter: #32DBEF,
+        );
+
+
+        // bucle
+
+        @each $nameSocialMedia, $colorIcon in $iconSocialMedia {
+            .rs-#{$nameSocialMedia}{
+                color: #fff;
+                font-size: 20px;
+            
+
+                &:hover{
+                    color: $colorIcon;
+                }
+            }
+        }
+
+    }
+    
 }
 
 .card__footer a{
     text-decoration: none;
 }
+
+

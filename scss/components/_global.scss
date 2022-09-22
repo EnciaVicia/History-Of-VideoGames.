@@ -9,3 +9,28 @@
     background: rgb(16,7,32);
     background: linear-gradient(90deg, rgba(16,7,32,1) 5%, rgba(35,16,68,1) 48%, rgba(16,7,32,1) 100%);
 }
+
+
+// extends
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+// mixins
+
+@mixin letterSpacing($spacing) {
+    letter-spacing: $spacing;
+}
+
+@mixin templateFlex($valueJustify, $alignItems) {
+    display: flex;
+    justify-content: $valueJustify;
+    
+
+    @if ($alignItems == true) {
+        align-items: center;
+    }
+}
