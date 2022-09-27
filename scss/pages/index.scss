@@ -65,8 +65,6 @@
     background-color: rgb(113, 113, 224);
     overflow: auto;
     margin: 10px;
-    grid-row: 3;
-    grid-column: 6/10;
     box-shadow: 0px 0px 25px #222;
     filter: contrast(135%);
 
@@ -130,8 +128,6 @@
     transform: scale(1.02);
 }
 .description-2{
-    grid-column: 2/2;
-    grid-row: 10/2;
     padding: 5px;
     border: 10px solid #210e57;
     height: 200px;
@@ -139,7 +135,7 @@
     color: rgb(255, 255, 255);
     background-color: rgb(113, 113, 224);
     overflow: auto;
-    margin-left: 30px;
+   
 
     &:hover{
         background-color: rgb(12, 12, 54);
@@ -176,9 +172,12 @@
     padding:30px;
     box-sizing: border-box;
 
-
     &:hover{
         transform: scale(1);
+    }
+
+    & p {
+        overflow: auto;
     }
 }
 
@@ -277,4 +276,21 @@
     color: #210e57;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+}
+
+.card__p3{
+    @include letterSpacing(2px);
+    padding: 10px;
+    border: 10px solid #210e57;
+    height: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 113, 224);
+    overflow: auto;
+    box-shadow: 0px 0px 25px #222;
+    filter: contrast(135%);
+
+    &:hover{
+        background-color: rgb(12, 12, 54);
+    }
 }
