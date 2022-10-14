@@ -76,6 +76,16 @@
 
 }
 
+  .p_description{
+    border: 5px solid #FFC23C;
+    color: #fff;
+    background-color: #31087B;
+
+
+    &:hover{
+      background-color: #1f113b;
+    }
+  }
 
 
 .p{
@@ -85,7 +95,19 @@
     overflow: auto;
 
     &:hover{
-        background-color: rgba(136, 41, 41, 0.5);
+        background-color: #1f113b;
     }
+
 }
+
+.section3__img{
+  border: 5px solid #FFC23C;
+
+
+  &:hover{
+    transform: scale(1.01);
+    border: 5px dashed #FFC23C;
+  }
+}
+
 

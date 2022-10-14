@@ -283,6 +283,20 @@ $fontLarge: $fontBase +20;
   .card__p3:hover {
     background-color: #0c0c36; }
 
+.card__p4 {
+  letter-spacing: 2px;
+  padding: 10px;
+  border: 10px solid #210e57;
+  height: 200px;
+  text-align: center;
+  color: #7171e0;
+  background-color: #fff;
+  overflow: auto;
+  box-shadow: 0px 0px 25px #222;
+  filter: contrast(135%); }
+  .card__p4:hover {
+    background-color: #0c0c36; }
+
 .card {
   height: 45rem;
   perspective: inherit;
@@ -347,13 +361,26 @@ $fontLarge: $fontBase +20;
     border-left: 10px solid #A81A1A;
     padding: 10px; }
 
+.p_description {
+  border: 5px solid #FFC23C;
+  color: #fff;
+  background-color: #31087B; }
+  .p_description:hover {
+    background-color: #1f113b; }
+
 .p {
   border-radius: 30px;
   padding: 6px;
   background-color: #31087B;
   overflow: auto; }
   .p:hover {
-    background-color: rgba(136, 41, 41, 0.5); }
+    background-color: #1f113b; }
+
+.section3__img {
+  border: 5px solid #FFC23C; }
+  .section3__img:hover {
+    transform: scale(1.01);
+    border: 5px dashed #FFC23C; }
 
 .card__form {
   width: 450px;
@@ -411,10 +438,11 @@ textarea {
   grid-column: 2;
   text-align: center;
   padding: 10px 0;
-  border: 10px solid red;
+  border: 10px solid #FFC23C;
   border-radius: 20px;
   background-color: rgba(193, 42, 42, 0.627);
-  font-size: 25px; }
+  font-size: 25px;
+  color: #fff; }
   .h1__sponsors:hover {
     background-color: #c53232;
     font-size: 20px;

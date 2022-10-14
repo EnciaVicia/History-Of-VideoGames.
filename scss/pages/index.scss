@@ -294,3 +294,20 @@
         background-color: rgb(12, 12, 54);
     }
 }
+
+.card__p4{
+    @include letterSpacing(2px);
+    padding: 10px;
+    border: 10px solid #210e57;
+    height: 200px;
+    text-align: center;
+    color: rgb(113, 113, 224);
+    background-color: #fff;
+    overflow: auto;
+    box-shadow: 0px 0px 25px #222;
+    filter: contrast(135%);
+
+    &:hover{
+        background-color: rgb(12, 12, 54);
+    }
+}
