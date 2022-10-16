@@ -8,6 +8,13 @@
   background: #100720;
   background: linear-gradient(90deg, #100720 5%, #231044 48%, #100720 100%); }
 
+.navbar__class {
+  background-color: rgba(42, 12, 53, 0.5);
+  border: 5px solid black; }
+
+.navbar-nav a {
+  margin: 0 20px; }
+
 .container, .header {
   max-width: 1200px;
   margin: 0 auto; }
@@ -25,6 +32,8 @@
 .card__footer {
   background-color: #FA2FB5;
   border: 5px solid #FFC23C; }
+  .card__footer--rrss a {
+    margin: 5px; }
   .card__footer--rrss .rs-facebook {
     color: #fff;
     font-size: 20px; }
@@ -383,7 +392,7 @@ $fontLarge: $fontBase +20;
     border: 5px dashed #FFC23C; }
 
 .card__form {
-  width: 450px;
+  width: 75%;
   margin: auto;
   /* background-color: rgba(0,0,0,.4); */
   padding: 10px 20px;
@@ -440,11 +449,11 @@ textarea {
   padding: 10px 0;
   border: 10px solid #FFC23C;
   border-radius: 20px;
-  background-color: rgba(193, 42, 42, 0.627);
+  background-color: rgba(49, 9, 94, 0.627);
   font-size: 25px;
   color: #fff; }
   .h1__sponsors:hover {
-    background-color: #c53232;
+    background-color: #6d0d6d;
     font-size: 20px;
     color: #fff; }
 
@@ -462,10 +471,12 @@ textarea {
 .div1__p {
   grid-column: 2;
   grid-row: 5;
+  color: #fff;
   border: 5px dashed black;
-  overflow: auto; }
+  overflow: auto;
+  border: 7px solid #fff; }
   .div1__p:hover {
-    background-color: #e66969; }
+    background-color: #5e0b92; }
 
 .img2 {
   grid-column: 3/4;

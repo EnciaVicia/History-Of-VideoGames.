@@ -11,6 +11,16 @@
 }
 
 
+.navbar__class{
+    background-color: rgba($color: #2a0c35, $alpha: 0.5);
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.navbar-nav a{
+    margin: 0 20px;
+}
+
+
 // extends
 
 .container{

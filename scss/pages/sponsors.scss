@@ -6,12 +6,12 @@
     border: 10px solid #FFC23C;
     
     border-radius: 20px;
-    background-color: rgba(193, 42, 42, 0.627);
+    background-color: rgba(49, 9, 94, 0.627);
     font-size: 25px;
     color: #fff;
 
     &:hover{
-        background-color: #c53232;
+        background-color: #6d0d6d;
         font-size: 20px;
         color: #fff;
     }
@@ -37,13 +37,13 @@
 .div1__p{
     grid-column: 2;
     grid-row: 5;
-   
+    color: #fff;
     border: 5px dashed black;
     overflow: auto;
-
+    border: 7px solid #fff;
 
     &:hover{
-        background-color: #e66969;
+        background-color: #5e0b92;
     }
 }
 
